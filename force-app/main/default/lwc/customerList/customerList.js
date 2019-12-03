@@ -29,12 +29,15 @@ export default class CustomerList extends LightningElement
     wiredCustomerData(value) 
     {
         this.wiredRecords = value;
+        //console
 
         if (value.error) 
         {
             this.errorMsg = value.error;
             this.msgForUser = 'There was an issue loading customers.';
             this.showDetails = false;
+            // eslint-disable-next-line no-console
+            console.log(this.errorMsg);
         } 
         else if (value.data) 
         {
