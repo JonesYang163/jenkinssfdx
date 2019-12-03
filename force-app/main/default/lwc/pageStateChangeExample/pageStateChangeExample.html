@@ -1,0 +1,9 @@
+<template>
+    <div>
+        <a href={showPanelUrl} onclick={handleShowPanelClick}>Show Panel</a>
+    </div>
+    <div if:true={showPanel}>
+        <h1>This is the panel</h1>
+        <a href={noPanelUrl} onclick={handleNoPanelClick}>Hide Panel</a>
+    </div>
+</template>

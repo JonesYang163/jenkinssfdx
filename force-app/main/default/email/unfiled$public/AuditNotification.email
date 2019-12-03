@@ -1,0 +1,2 @@
+您好，渠道管理员：
+    项目：“{!Opportunity.Name}”的技术支持项目审核已通过，详细信息链接：{!Opportunity.Link}，请及时查看！

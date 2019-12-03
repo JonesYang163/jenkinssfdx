@@ -1,0 +1,74 @@
+{
+    "compilerOptions": {
+        "experimentalDecorators": true,
+        "baseUrl": ".",
+        "paths": {
+            "c/accountCard": [
+                "accountCard/accountCard.js"
+            ],
+            "c/customerList": [
+                "customerList/customerList.js"
+            ],
+            "c/customerTile": [
+                "customerTile/customerTile.js"
+            ],
+            "c/errorPanel": [
+                "errorPanel/errorPanel.js"
+            ],
+            "c/eventSimple": [
+                "eventSimple/eventSimple.js"
+            ],
+            "c/eventcontainer": [
+                "eventcontainer/eventcontainer.js"
+            ],
+            "c/eventsource": [
+                "eventsource/eventsource.js"
+            ],
+            "c/helloWorld": [
+                "helloWorld/helloWorld.js"
+            ],
+            "c/helloWorldTest": [
+                "helloWorldTest/helloWorldTest.js"
+            ],
+            "c/pageStateChangeExample": [
+                "pageStateChangeExample/pageStateChangeExample.js"
+            ],
+            "c/paginator": [
+                "paginator/paginator.js"
+            ],
+            "c/publishreceiver": [
+                "publishreceiver/publishreceiver.js"
+            ],
+            "c/publishsource": [
+                "publishsource/publishsource.js"
+            ],
+            "c/pubsub": [
+                "pubsub/pubsub.js"
+            ],
+            "c/relatedList": [
+                "relatedList/relatedList.js"
+            ],
+            "c/searchAccountRecords": [
+                "searchAccountRecords/searchAccountRecords.js"
+            ],
+            "c/showUserId": [
+                "showUserId/showUserId.js"
+            ],
+            "c/toastMessage": [
+                "toastMessage/toastMessage.js"
+            ],
+            "c/updaterecord": [
+                "updaterecord/updaterecord.js"
+            ]
+        }
+    },
+    "include": [
+        "**/*",
+        "../../../../.sfdx/typings/lwc/**/*.d.ts"
+    ],
+    "typeAcquisition": {
+        "include": [
+            "jest"
+        ]
+    }
+}

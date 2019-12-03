@@ -1,0 +1,2 @@
+您好，渠道管理员：
+    您的商机名称为：“{!Opportunity.Name}”的项目项目阶段发生变更，变更为：“{!Opportunity.StageName}“状态，详细信息链接为：{!Opportunity.Link}，请及时前往项目信息页面编辑录入下单金额！

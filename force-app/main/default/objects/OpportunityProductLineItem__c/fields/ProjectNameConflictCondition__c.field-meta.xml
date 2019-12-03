@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>ProjectNameConflictCondition__c</fullName>
+    <externalId>false</externalId>
+    <formula>LEN( OpportunityName__c ) &gt;= 6</formula>
+    <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+    <label>项目名称冲突条件</label>
+    <trackTrending>false</trackTrending>
+    <type>Checkbox</type>
+</CustomField>

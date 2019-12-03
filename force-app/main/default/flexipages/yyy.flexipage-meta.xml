@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<FlexiPage xmlns="http://soap.sforce.com/2006/04/metadata">
+    <flexiPageRegions>
+        <componentInstances>
+            <componentName>helloWorld</componentName>
+        </componentInstances>
+        <componentInstances>
+            <componentName>helloWorldTest</componentName>
+        </componentInstances>
+        <componentInstances>
+            <componentName>showUserId</componentName>
+        </componentInstances>
+        <componentInstances>
+            <componentName>toastMessage</componentName>
+        </componentInstances>
+        <componentInstances>
+            <componentName>helloWorldTest</componentName>
+        </componentInstances>
+        <name>main</name>
+        <type>Region</type>
+    </flexiPageRegions>
+    <masterLabel>yyy</masterLabel>
+    <template>
+        <name>flexipage:defaultAppHomeTemplate</name>
+    </template>
+    <type>AppPage</type>
+</FlexiPage>

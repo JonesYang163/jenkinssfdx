@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EmailTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <available>true</available>
+    <description>项目状态为已通过时提醒</description>
+    <encodingKey>GB2312</encodingKey>
+    <name>项目状态为已通过时</name>
+    <style>none</style>
+    <subject>项目状态为已通过时提醒渠道管理人员</subject>
+    <type>text</type>
+    <uiType>Aloha</uiType>
+</EmailTemplate>

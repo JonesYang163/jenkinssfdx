@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EmailTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <available>true</available>
+    <description>经销商提交项目后提示渠道管理员是否接收项目</description>
+    <encodingKey>GB2312</encodingKey>
+    <name>经销商提交项目后提示是否接收项目</name>
+    <style>none</style>
+    <subject>经销商提交项目后提示是否接收项目</subject>
+    <type>text</type>
+    <uiType>Aloha</uiType>
+</EmailTemplate>

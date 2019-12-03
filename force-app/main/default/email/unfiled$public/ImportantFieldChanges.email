@@ -1,0 +1,2 @@
+您好，渠道管理员：
+    您的项目名称为：“{!OpportunityProductLineItem__c.OpportunityName__c}”的项目重要字段发生了变更，详细信息链接为：{!OpportunityProductLineItem__c.Link}，请及时前往查看！

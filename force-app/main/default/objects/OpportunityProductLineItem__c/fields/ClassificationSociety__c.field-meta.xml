@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>ClassificationSociety__c</fullName>
+    <externalId>false</externalId>
+    <label>船级社</label>
+    <required>false</required>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>CCS</fullName>
+                <default>false</default>
+                <label>CCS</label>
+            </value>
+            <value>
+                <fullName>BV</fullName>
+                <default>false</default>
+                <label>BV</label>
+            </value>
+            <value>
+                <fullName>BV+IMO2</fullName>
+                <default>false</default>
+                <label>BV+IMO2</label>
+            </value>
+            <value>
+                <fullName>CCS/BV/ABS</fullName>
+                <default>false</default>
+                <label>CCS/BV/ABS</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

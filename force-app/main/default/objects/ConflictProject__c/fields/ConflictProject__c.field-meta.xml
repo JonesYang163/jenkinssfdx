@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>ConflictProject__c</fullName>
+    <externalId>false</externalId>
+    <label>冲突项目</label>
+    <referenceTo>Opportunity</referenceTo>
+    <relationshipLabel>冲突项目列表</relationshipLabel>
+    <relationshipName>ConflictProjectn0db</relationshipName>
+    <relationshipOrder>0</relationshipOrder>
+    <reparentableMasterDetail>false</reparentableMasterDetail>
+    <trackTrending>false</trackTrending>
+    <type>MasterDetail</type>
+    <writeRequiresMasterRead>false</writeRequiresMasterRead>
+</CustomField>

@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EmailTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <available>true</available>
+    <description>技术支持项目审核通过通知</description>
+    <encodingKey>GB2312</encodingKey>
+    <name>技术支持项目审核通过通知</name>
+    <style>none</style>
+    <subject>技术支持项目审核通过通知</subject>
+    <type>text</type>
+    <uiType>Aloha</uiType>
+</EmailTemplate>

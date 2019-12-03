@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomTab xmlns="http://soap.sforce.com/2006/04/metadata">
+    <description>由Lightning 应用程序生成器创建</description>
+    <flexiPage>yyy</flexiPage>
+    <label>yyy</label>
+    <mobileReady>true</mobileReady>
+    <motif>Custom34: Insect</motif>
+</CustomTab>

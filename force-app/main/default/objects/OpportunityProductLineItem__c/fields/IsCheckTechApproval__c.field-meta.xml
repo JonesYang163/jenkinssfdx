@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>IsCheckTechApproval__c</fullName>
+    <description>Requirements :A:CCEC+ model: include &quot;-m &quot;+ classification: [fishing] or [inland carrier],B:CCEC+ model: include&quot; -m &quot;+ application: not [advocate], approval flow will go to technical support for review, technical support can &quot;approve&quot; and &quot;reject&quot; projects.满足条件:A:CCEC+机型:包含&quot;-M&quot;+分类:【fishing】或【inland carrier】,B:CCEC+机型:包含&quot;-M&quot;+应用:非【主推】,审批流会走到技术支持进行审核,技术支持可&quot;批准&quot;和&quot;拒绝&quot;项目</description>
+    <externalId>false</externalId>
+    <formula>OR( AND(TEXT(Factory__c)=&quot;CCEC&quot;,CONTAINS( Product__r.Name , &quot;-M&quot;),TEXT(OpportunityName__r.Category__c) = &quot;fishing&quot;  || TEXT(OpportunityName__r.Category__c )= &quot;inland carrier&quot;) , AND(TEXT(Factory__c)=&quot;CCEC&quot;,CONTAINS(Product__r.Name , &quot;-M&quot;),TEXT(ApplicationType__c)  &lt;&gt; &quot;主推&quot;) )</formula>
+    <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+    <label>是否技术审核判断</label>
+    <trackTrending>false</trackTrending>
+    <type>Checkbox</type>
+</CustomField>
