@@ -8,9 +8,9 @@ node {
 
     def HUB_ORG='yangjiwen129@sina.com'
     def SFDC_HOST = 'https://login.salesforce.com'
-    //def JWT_KEY_CRED_ID = '0535322c-d972-40ae-a693-c68055aab9d2'
+    def JWT_KEY_CRED_ID1 = '0535322c-d972-40ae-a693-c68055aab9d2'
     def JWT_KEY_CRED_ID = 'Users/yjw/Documents/JWT/server.key'
-    def JWT_KEY_CRED_ID1 = 'Users/yjw/Documents/JWT/server.key'
+    //def JWT_KEY_CRED_ID1 = 'Users/yjw/Documents/JWT/server.key'
     def CONNECTED_APP_CONSUMER_KEY='3MVG9pe2TCoA1Pf5e20tslKYCmYaN4Or1Bx2vjr6aIY5jm61BiH8Od8V4B8SHBTxVrEWqwGltHRQ9K1L.nnO9'
 
     println 'KEY IS' 
@@ -28,9 +28,9 @@ node {
     withCredentials([file(credentialsId: JWT_KEY_CRED_ID, variable: 'jwt_key_file')]) {
         stage('Deploye Code') {
             if (isUnix()) {
-                rc = sh returnStatus: true, script: "${toolbelt} force:auth:jwt:grant --clientid ${CONNECTED_APP_CONSUMER_KEY} --username ${HUB_ORG} --jwtkeyfile ${JWT_KEY_CRED_ID} --setdefaultdevhubusername --instanceurl ${SFDC_HOST}"
+                rc = sh returnStatus: true, script: "${toolbelt} force:auth:jwt:grant --clientid ${CONNECTED_APP_CONSUMER_KEY} --username ${HUB_ORG} --jwtkeyfile ${JWT_KEY_CRED_ID1} --setdefaultdevhubusername --instanceurl ${SFDC_HOST}"
             }else{
-                 rc = bat returnStatus: true, script: "\"${toolbelt}\" force:auth:jwt:grant --clientid ${CONNECTED_APP_CONSUMER_KEY} --username ${HUB_ORG} --jwtkeyfile \"${JWT_KEY_CRED_ID}\" --setdefaultdevhubusername --instanceurl ${SFDC_HOST}"
+                 rc = bat returnStatus: true, script: "\"${toolbelt}\" force:auth:jwt:grant --clientid ${CONNECTED_APP_CONSUMER_KEY} --username ${HUB_ORG} --jwtkeyfile \"${JWT_KEY_CRED_ID1}\" --setdefaultdevhubusername --instanceurl ${SFDC_HOST}"
             }
             if (rc != 0) { error 'hub org authorization failed' }
 
