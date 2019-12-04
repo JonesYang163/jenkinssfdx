@@ -8,11 +8,14 @@ node {
 
     //def HUB_ORG='yangjiwen129@sina.com'
     def HUB_ORG=env.HUB_ORG
-    def SFDC_HOST = 'https://login.salesforce.com'
-    def JWT_KEY_CRED_ID1 = '0535322c-d972-40ae-a693-c68055aab9d2'
-    def JWT_KEY_CRED_ID = '0535322c-d972-40ae-a693-c68055aab9d2'
-    //def JWT_KEY_CRED_ID1 = 'Users/yjw/Documents/JWT/server.key'
-    def CONNECTED_APP_CONSUMER_KEY='3MVG9pe2TCoA1Pf5e20tslKYCmYaN4Or1Bx2vjr6aIY5jm61BiH8Od8V4B8SHBTxVrEWqwGltHRQ9K1L.nnO9'
+    // def SFDC_HOST = 'https://login.salesforce.com'
+    def SFDC_HOST = env.SFDC_HOST
+    // def JWT_KEY_CRED_ID1 = '0535322c-d972-40ae-a693-c68055aab9d2'
+    // def JWT_KEY_CRED_ID = '0535322c-d972-40ae-a693-c68055aab9d2'
+    def JWT_KEY_CRED_ID = env.JWT_KEY_CRED_ID
+    // def JWT_KEY_CRED_ID1 = 'Users/yjw/Documents/JWT/server.key'
+    // def CONNECTED_APP_CONSUMER_KEY='3MVG9pe2TCoA1Pf5e20tslKYCmYaN4Or1Bx2vjr6aIY5jm61BiH8Od8V4B8SHBTxVrEWqwGltHRQ9K1L.nnO9'
+    def CONNECTED_APP_CONSUMER_KEY=env.CONNECTED_APP_CONSUMER_KEY
 
     println 'KEY IS' 
     println JWT_KEY_CRED_ID
