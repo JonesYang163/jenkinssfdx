@@ -36,7 +36,7 @@ node {
 		//sh '/usr/local/bin/sfdx force:auth:jwt:grant'
             //if (isUnix()) {
                 //rc = sh '/usr/local/bin/sfdx force:auth:jwt:grant --clientid ${CONNECTED_APP_CONSUMER_KEY} --username ${HUB_ORG} --jwtkeyfile ${jwt_key_file} --setdefaultdevhubusername --instanceurl ${SFDC_HOST} --setalias my-hub-org'
-		rc = sh '/usr/local/bin/sfdx force:auth:jwt:grant --clientid ${CONNECTED_APP_CONSUMER_KEY} --username ${HUB_ORG} --jwtkeyfile users/yjw/documents/jwt/server.key --setdefaultdevhubusername --instanceurl ${SFDC_HOST} --setalias my-hub-org'
+		rc = sh '/usr/local/bin/sfdx force:auth:jwt:grant --clientid ${CONNECTED_APP_CONSUMER_KEY} --username ${HUB_ORG} --jwtkeyfile /users/yjw/documents/jwt/server.key --setdefaultdevhubusername --instanceurl ${SFDC_HOST} --setalias my-hub-org'
                 //rc = command "${toolbelt}/sfdx force:auth:jwt:grant --clientid ${CONNECTED_APP_CONSUMER_KEY} --username ${HUB_ORG} --jwtkeyfile ${jwt_key_file} --setdefaultdevhubusername --instanceurl ${SFDC_HOST}"
 
             //}else{
